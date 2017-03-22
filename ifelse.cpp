@@ -9,11 +9,13 @@ int main()
 	cout << "Enter the number of hours worked,\n"
 		<< "rounded to a whole number of hours: ";
 	cin >> hours;
-	if (hours > 40)
+	if (hours > 40){
 		gross_pay = rate * 40 + 1.5 *rate * (hours -40);
-	else
+	}
+	else{
 		gross_pay = rate * hours;
-	
+	}
+		
 	cout.setf(ios::fixed);
 	cout.setf(ios::showpoint);
 	cout.precision(2);
